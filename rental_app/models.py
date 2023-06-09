@@ -13,7 +13,7 @@ class Car(models.Model):
     make = models.CharField(max_length=20)
     model = models.CharField(max_length=20)
     year = models.IntegerField()
-    transmission = models.CharField(options=TRANSMISSION_OPTIONS, max_length=1)
+    transmission = models.CharField(choices=TRANSMISSION_OPTIONS, max_length=1)
     rent_per_day = models.DecimalField(max_digits=10, decimal_places=2)
     out_of_service = models.BooleanField()
     

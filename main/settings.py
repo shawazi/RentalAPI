@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     
     # My apps
     
-    'rental_API',
+    'rental_app',
     
     # 3rd party apps
     
