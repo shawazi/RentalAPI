@@ -41,9 +41,11 @@ INSTALLED_APPS = [
     # My apps
     
     'rental_app',
+    'account_app',
     
     # 3rd party apps
-    
+    'rest_framework.authtoken',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

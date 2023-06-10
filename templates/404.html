@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    
+    h1 {
+      color: #333;
+      font-size: 36px;
+      margin-top: 100px;
+    }
+    
+    p {
+      color: #666;
+      font-size: 18px;
+    }
+    
+    /* Animated styles */
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      
+      to {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+      }
+      
+      to {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="animated" style="animation-name: fadeIn;">
+    <h1 style="animation-delay: 0.2s;">Error: 404</h1>
+    <p style="animation-delay: 0.4s;">I'm sorry, we couldn't find the page you were looking for.</p>
+    <p style="animation-delay: 0.6s;">Please check the URL and try again.</p>
+  </div>
+  
+  <script>
+    // Add slideIn animation to the text elements
+    window.addEventListener('load', function() {
+      var elements = document.querySelectorAll('.animated');
+      elements.forEach(function(element) {
+        element.style.animationName = 'slideIn';
+      });
+    });
+  </script>
+</body>
+</html>
